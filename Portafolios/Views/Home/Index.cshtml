@@ -1,0 +1,14 @@
+﻿@model HomeIndexViewModel
+
+@{
+    ViewData["Title"] = "Página principal";
+    DateTime hoy = DateTime.Now;
+    int tiempo = 4;
+}
+
+
+
+<partial name="_Presentacion" />
+<partial name="_Habilidades" />
+<partial name="_SeccionProyectos" model="Model.Proyectos"/>
+
